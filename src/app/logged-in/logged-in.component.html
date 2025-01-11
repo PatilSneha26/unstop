@@ -1,0 +1,27 @@
+<!-- logged-in.component.html -->
+<div class="logged-in-container">
+    <div class="welcome-section">
+      <h1>Welcome to <span class="brand-text">Unstop</span></h1>
+      <div class="user-badges">
+        <span class="badge">S</span>
+        <span class="badge">P</span>
+        <span class="badge">L</span>
+      </div>
+    </div>
+  
+    <div class="profile-card">
+      <div class="profile-image">
+        <img [src]="currentUser.imageUrl" [alt]="currentUser.name">
+      </div>
+      <div class="profile-info">
+        <h2>{{ currentUser.name }}</h2>
+        <p>{{ currentUser.email }}</p>
+        <div class="role-badge">{{ currentUser.role }}</div>
+      </div>
+    </div>
+  
+    <div class="additional-badges">
+      <span class="badge">L</span>
+      <span class="badge">L</span>
+    </div>
+  </div>
